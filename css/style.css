@@ -27,6 +27,7 @@ header {
   /*justify-content: flex-end;  to make them all go to right side and add margin-right:auto to the .logo to make it float to the left side*/
   align-items: center;
   padding: 30px 10%;
+  position: relative;
 }
 
 .nav_links {
@@ -59,4 +60,18 @@ button:hover {
 }
 
 body {
+  background: url(../images/bakery.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  color: rgb(6, 19, 3);
+  font-size: 3rem;
+  text-decoration: solid;
+  text-transform: capitalize;
+  text-align: center;
+  background: rgba(184, 137, 137, 0.5);
 }
