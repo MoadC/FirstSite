@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  background: rgba(181, 189, 165, 0.7);
+  cursor: pointer;
+  width: 50px;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background: #24252a;
+  justify-content: space-between;
+  /*justify-content: flex-end;  to make them all go to right side and add margin-right:auto to the .logo to make it float to the left side*/
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease;
+}
+
+.nav_links li a:hover {
+  color: rgb(28, 145, 145);
+}
+
+button {
+  padding: 9px 25px;
+  background: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(0, 136, 169, 0.7);
+}
+
+body {
+}
