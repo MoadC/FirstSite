@@ -68,6 +68,7 @@ button:hover {
   text-transform: capitalize;
   text-align: center;
   background: rgba(184, 137, 137, 0.5);
+  border-radius: 10%;
 }
 .content1 {
   background: url(../images/bakery.jpg);
@@ -78,10 +79,11 @@ button:hover {
 
 .content2 {
   display: grid;
-  grid-template-columns: auto auto auto;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 350px;
   gap: 16px;
-  padding-top: 20px;
+  padding: 20px 5%;
   background: linear-gradient(to right, #13a43e 0%, #3168cb 76%, #144e75 100%);
   padding-bottom: 20px;
 }
@@ -111,7 +113,6 @@ button:hover {
 }
 
 .card:hover {
-  cursor: pointer;
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(1.02);
 }
@@ -165,4 +166,36 @@ button:hover {
 .service {
   text-align: center;
   background: chartreuse;
+}
+
+.card:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-auto-rows: auto;
+}
+.card:nth-child(2) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-auto-rows: auto;
+}
+.card:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-auto-rows: auto;
+}
+.card:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-auto-rows: auto;
+}
+.card:nth-child(5) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-auto-rows: auto;
+}
+
+.moreinfo {
+  color: rgb(189, 145, 145);
+  background: rgba(109, 126, 85, 0.5);
+  border-radius: 5px;
 }
