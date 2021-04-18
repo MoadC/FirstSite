@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   /*justify-content: flex-end;  to make them all go to right side and add margin-right:auto to the .logo to make it float to the left side*/
   align-items: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
   position: relative;
 }
 
@@ -59,13 +59,7 @@ button:hover {
   background: rgba(0, 136, 169, 0.7);
 }
 
-body {
-  background: url(../images/bakery.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.content {
+.contentof1 {
   position: absolute;
   top: 30%;
   color: rgb(6, 19, 3);
@@ -74,4 +68,101 @@ body {
   text-transform: capitalize;
   text-align: center;
   background: rgba(184, 137, 137, 0.5);
+}
+.content1 {
+  background: url(../images/bakery.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 90vh;
+}
+
+.content2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 350px;
+  gap: 16px;
+  padding-top: 20px;
+  background: linear-gradient(to right, #13a43e 0%, #3168cb 76%, #144e75 100%);
+  padding-bottom: 20px;
+}
+
+.card_category {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 70px;
+}
+.card_title {
+  font-size: 16px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 60px;
+  transition: all 0.3 ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.card:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/sweets.jpg");
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/salty.jpg");
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/birthday.jpg");
+}
+.card:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/special.jpg");
+}
+.card:nth-child(5) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/rewards.jpg");
+}
+
+.service {
+  text-align: center;
+  background: chartreuse;
 }
